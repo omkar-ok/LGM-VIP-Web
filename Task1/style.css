@@ -1,0 +1,299 @@
+.bg-trans {
+    background-color: transparent;
+}
+
+.container.def {
+    padding: 30px 15% 15px 15%;
+    /* padding-top: 30px; */
+}
+
+nav {
+    color: black;
+    text-shadow: -1px 1px 0 #000;
+}
+
+.nav-item .nav-link.active {
+    color: #fcea25;
+    font-weight: bold;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.home-font1 {
+    font-size: 40;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff;
+}
+
+.home-font1-1 {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    /* text-shadow: -1px 1px 0 #fff, 1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #000; */
+}
+
+.home-font2 {
+    font-family: monospace;
+    font-size: 28;
+}
+
+.umbrella-icon-size {
+    font-size: 150;
+}
+
+.btn {
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.bg-yel {
+    background-color: #fcea25;
+}
+
+.bg-yel:hover {
+    background-color: #61497B;
+    color: white;
+}
+
+.bg-purp {
+    background-color: #61497B;
+    color: white;
+}
+
+.bg-purp:hover {
+    background-color: #fcea25;
+    color: black;
+}
+
+.symbol-icon {
+    background-color: #61497B;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    /* margin: 10px; */
+    /* padding: 15px; */
+}
+
+.center-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover1-1:hover {
+    filter: brightness(90%);
+}
+
+.hover1:hover {
+    /* -webkit-filter: brightness(90%); */
+    /* background-color: lightgray; */
+    filter: brightness(90%);
+    background-color: #fff586;
+}
+
+.hover1:hover .hover1-sub,
+.hover1-1:hover .hover1-sub {
+    background-color: #61497B;
+    color: white;
+}
+
+.bg-alt1 {
+    background-color: rgb(228, 227, 227);
+}
+
+.bg-alt2 {
+    background-color: rgb(216, 216, 216);
+}
+
+.bg-def {
+    background-color: rgb(255, 255, 255);
+}
+
+#business-plan {
+    border-style: solid;
+    border-width: 0px 2px;
+    border-color: lightgray;
+}
+
+.team-member img {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(128, 0, 128, 0.5);
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    /* transition: .5s ease; */
+    /*  */
+    border-radius: 50%;
+    transition: width 1s, height 1s;
+}
+
+.hover2 {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hover2:hover .overlay {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    /* transform: rotate(360deg); */
+}
+
+.overlay-text {
+    white-space: nowrap;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-text a {
+    color: white;
+}
+
+#sub-imgs {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#sub-imgs img {
+    padding: 16px 8px;
+    min-width: 100px;
+}
+
+.img-scroll-btn {
+    margin: 16px 0px;
+    width: 100%;
+    height: 70%;
+    color: white;
+}
+
+#signup {
+    background-image: url(img/bridege2.png);
+    background-size: cover;
+    height: 300px;
+}
+
+#contact {
+    background-color: #ffe26d;
+}
+
+#contact .container h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact .container>input,
+#contact .container>textarea,
+#contact .container>button {
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.bg-send {
+    background-color: #61497B;
+    color: white;
+}
+
+.bg-send:hover {
+    background-color: orange;
+}
+
+@media (max-width: 800px) {
+    .home-font1 {
+        font-size: 30;
+    }
+    .home-font2 {
+        font-size: 14;
+    }
+    .umbrella-icon-size {
+        font-size: 100;
+    }
+    .p-title-font {
+        font-size: medium;
+    }
+    .p-font {
+        font-size: 10;
+        height: 70px;
+        overflow: hidden;
+    }
+    .hover1-sub {
+        font-size: x-small;
+        font-weight: bold;
+    }
+    .team-member img {
+        height: 100%;
+        width: 100%;
+    }
+    .hover2:hover .overlay {
+        height: 100%;
+        width: 100%;
+    }
+    .overlay-text {
+        font-size: 14px;
+    }
+    #business-plan {
+        border-width: 2px 0px;
+    }
+    #signup button {
+        width: fit-content;
+    }
+    #signup {
+        height: 200px;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .col-1 {
+        padding: 0;
+        margin: 0;
+    }
+    .img-scroll-btn {
+        margin-left: 0;
+    }
+    #sub-imgs .col-2 {
+        width: 40%;
+    }
+    #blog h5 {
+        font-size: 14px;
+    }
+    #contact .col-6.col-6-2 {
+        height: fit-content;
+    }
+    #contact .container h5 {
+        font-size: xx-small;
+    }
+    #contact .container>input {
+        width: 100%;
+        height: 5%;
+        margin: 2;
+        font-size: xx-small;
+    }
+    #contact .container>textarea {
+        width: 100%;
+        height: 10%;
+        margin: 2;
+        font-size: xx-small;
+    }
+    #contact .container>button {
+        width: 100%;
+    }
+    #footer p,
+    #footer li {
+        font-size: x-small;
+    }
+}
